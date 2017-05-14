@@ -1,0 +1,5 @@
+--为防火墙添加一条规则：
+屏蔽端口445与公网建立的TCP连接（2017/05/13出现的"勒索病毒"，造成的全球范围的传播。和比特币相关）
+netsh advfirewall firewall add rule name=deny445 dir=in action=block protocol=TCP localport=445
+
+powershell：自定义函数，可以为window定义函数用法，类似于定义ping，计算器等命令
