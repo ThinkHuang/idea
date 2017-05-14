@@ -3,3 +3,37 @@
 netsh advfirewall firewall add rule name=deny445 dir=in action=block protocol=TCP localport=445
 
 powershell：自定义函数，可以为window定义函数用法，类似于定义ping，计算器等命令
+
+window7基本命令大全
+winver--检查window版本
+wmimgmt.msc--打开Windows管理体系结构(WMI)
+wscript--Windows脚步宿主设置
+write--写字板
+wiaacmgr--扫描仪和照相机向导
+winchat--xp自带局域网聊天
+msconfig.exe--系统配置使用程序
+mspaint--画图板
+mstsc--远程桌面连接
+mmc--打开控制台
+devmgmt.msc--设备管理器
+diskmgmt.msc--磁盘管理实用程序
+dcomcnfg--打开系统组件服务
+notepad--打开记事本
+netstat -a -i--扫描启用端口(较慢)
+netstat -an--查看所有端口(较快)
+services.msc--打开系统服务管理器
+sfc--系统文件检查器
+tsshutdn--60秒倒计时关机命令
+taskmgr--任务管理器
+eudcredit--造字程序
+explorer--资源管理器
+perfmon.msc--性能监视器
+regedit.exe--注册表
+regedt32--注册表编辑器
+rononce -p--15秒关机
+certmgr.msc--证书管理实用程序
+calc--计算器
+cleanmgr--垃圾清理
+osk--屏幕键盘
+logoff--注销命令
+Nslookup
