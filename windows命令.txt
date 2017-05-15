@@ -37,3 +37,18 @@ cleanmgr--垃圾清理
 osk--屏幕键盘
 logoff--注销命令
 Nslookup
+
+--查看本地管理员组(也就是所有的管理员)
+net localgroup administrators
+--查看计算机的所有用户
+net users
+--为计算机添加用户，其中单引号指示需要创建的用户名和其登陆密码
+net user 'username' 'password' /add
+--将添加的用户提升为管理员
+net localgroup administrators 'username' /add
+--查看用户信息，指定用户名称为username
+net user 'username'
+--删除掉指定账号的管理员权限
+net localgroup administrators 'username' /del
+--删除账号
+net user 'username' /del
