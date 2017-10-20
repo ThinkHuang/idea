@@ -37,6 +37,7 @@ cleanmgr--垃圾清理
 osk--屏幕键盘
 logoff--注销命令
 Nslookup
+rdpclip.exe--有时候复制粘贴不起作用时，可以杀死该进程，然后重启该服务
 
 --查看本地管理员组(也就是所有的管理员)
 net localgroup administrators
@@ -52,3 +53,8 @@ net user 'username'
 net localgroup administrators 'username' /del
 --删除账号
 net user 'username' /del
+
+通过具体的端口，我们可以看到该端口被哪个pid进程占用：netstat -ano|findstr 端口号
+杀死进程taskkill /f /t /pid pid进程
+通过服务名称找到对应的pid，在通过pid找到该进程使用的端口是哪个
+tasklist 找到你对应的pid，然后通过netstat -ano命令找到对应的pid和端口之间的映射
